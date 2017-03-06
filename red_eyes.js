@@ -15,7 +15,7 @@ function setup() {
   createCanvas(1080, 720);
   capture = createCapture({
     video: {
-      facingMode: "user"
+      facingMode: "environment"
     }
   });
   capture.size(1080, 720);
