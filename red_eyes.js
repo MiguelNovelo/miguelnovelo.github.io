@@ -13,7 +13,7 @@ var capture;
 
 function setup() {
   createCanvas(1080, 720);
-  capture = createCapture(VIDEO)=;
+  capture = createCapture(VIDEO);
     
   
   capture.size(1080, 720);
