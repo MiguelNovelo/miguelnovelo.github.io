@@ -13,7 +13,11 @@ var capture;
 
 function setup() {
   createCanvas(1080, 720);
-  capture = createCapture(VIDEO);
+  capture = createCapture({
+    video: {
+      facingMode: "user"
+    }
+  });
   capture.size(1080, 720);
   capture.hide();
 }
@@ -26,4 +30,8 @@ function draw() {
   //filter(RED);
 
 
+}
+
+function mousePressed() {
+  fullScreen(true);
 }
