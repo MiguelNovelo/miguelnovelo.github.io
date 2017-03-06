@@ -16,12 +16,14 @@ function setup() {
   capture = createCapture({
     video: {
       facingMode: {
-        exact: "environment"
+        exact: "user"
       }
     }
   });
+  
   capture.size(1080, 720);
   capture.hide();
+  
 }
 
 function draw() {
