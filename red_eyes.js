@@ -13,8 +13,15 @@ var capture;
 
 function setup() {
   createCanvas(1080, 720);
-  capture = createCapture(VIDEO);
+  capture = createCapture({
     
+     video: {
+        facingMode: {
+ 
+         exact: "enviroment"
+        }
+      }
+    });
   
   capture.size(1080, 720);
   capture.hide();
