@@ -13,13 +13,8 @@ var capture;
 
 function setup() {
   createCanvas(1080, 720);
-  capture = createCapture({
-    video: {
-      facingMode: {
-        exact: "user"
-      }
-    }
-  });
+  capture = createCapture(VIDEO)=;
+    
   
   capture.size(1080, 720);
   capture.hide();
